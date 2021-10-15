@@ -1,5 +1,5 @@
-FROM php:7.4-cli
-COPY . /polandia
+FROM php:8.0-apache
+COPY ./php/src /var/www/html/
 WORKDIR /polandia
-EXPOSE  8080
-CMD [ "php", "index.php", "semuaData.php" ]
+# EXPOSE  8080
+# CMD [ "php", "index.php", "semuaData.php" ]
